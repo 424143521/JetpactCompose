@@ -14,12 +14,14 @@ import androidx.compose.ui.tooling.preview.Preview
 class MainActivity02 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //会在模拟器显示
         setContent {
             MessageCard(msg = Message("Andoird","Jetpack Compose "))
         }
 
         @Composable
         fun MessageCard(name:String){
+
             Text(text = "Hello $name!")
         }
 
